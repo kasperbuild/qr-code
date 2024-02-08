@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+:root{
+    --font-primary: 'Outfit', sans-serif;
+}
+
+html{
+    background-color: rgb(207, 207, 231);
+}
+
+body{
+    margin-top: 50px;
+}
+
+.container{
+    width: 350px; 
+    height: 550px;
+    margin-left: auto;
+    margin-right: auto; 
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 8px solid none;
+    border-radius: 20px;
+    text-align: center;
+}
+
+img{
+    border: 8px solid none;
+    border-radius: 10px;
+    width: 20em;
+    display: block;
+}
+
+h1,h2 {
+    display: flex;
+    width: 80%;
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1em;
+    color: gray;
+}
+
+.attribution { 
+    margin-top: 20px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a {
+     color: hsl(228, 45%, 44%); 
+    }
+
+
+    @media only screen and (max-width: 600px) {
+
+        .container{
+            width: 300px; 
+            height: 500px;
+            margin-left: auto;
+            margin-right: auto; 
+            background: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 8px solid none;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        img{
+            border: 8px solid none;
+            border-radius: 10px;
+            width: 17em;
+            display: block;
+        }
+        
+       
+    
+    
+    }
