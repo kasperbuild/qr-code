@@ -3,6 +3,7 @@
 
 :root{
     --font-primary: 'Outfit', sans-serif;
+    --primary-color:  hsl(228, 45%, 44%)
 }
 
 html{
@@ -58,7 +59,7 @@ h2 {
 }
 
 .attribution a {
-     color: hsl(228, 45%, 44%); 
+     color: var(--primary-color); 
     }
 
 
@@ -85,8 +86,47 @@ h2 {
             width: 17em;
             display: block;
         }
-        
-       
-    
-    
+      
     }
+
+
+/* QR CODE HTML*/
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4em;   
+    font-family: var(--font-primary);
+    padding: 10px;
+    background: var(--primary-color);
+    border-radius: 6px;
+}
+
+.form-label {
+    text-align:center;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+}
+
+.button-home {
+    font-family: var(--font-primary);
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    padding: 5px;
+    position: relative;
+}
+
+
+      
+

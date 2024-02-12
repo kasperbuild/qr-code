@@ -5,22 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/styles.css">
+  <script src="./js/qrcode_generator.js" defer></script>
+  <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
   <title>Frontend Mentor | QR code component</title>
 </head>
 
 <body>
 
   <main class="container">
-    <img src="./images/image-qr-code.png" alt="">
-    <h1> Improve your front-end skills by building projects</h1>
-    <h2>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</h2>
+    <form>
+        <input type="text" class="form-label" id="website" name="website" placeholder="Type your text here" required />
+        <button type="button" onclick="generateQRCode()">Generate QR Code</button>
+    </form>
 
-    <a href="generator.html">
-      <button type="button" class="button-home">Generate your own QR Code</button>
-    </a>
-
+    <div id="qrcode-container">
+        <div id="qrcode" class="qrcode"></div>
+    </div>
+    
   </main>
 
+  
 
 
 
