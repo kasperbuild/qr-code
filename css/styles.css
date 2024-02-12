@@ -3,7 +3,7 @@
 
 :root{
     --font-primary: 'Outfit', sans-serif;
-    --primary-color:  hsl(228, 45%, 44%)
+    --primary-color:  #3685ff /* hsl(228, 45%, 44%)*/
 }
 
 html{
@@ -127,6 +127,11 @@ form {
     position: relative;
 }
 
+.qrcode-container {
+  block-size: 50%;
+    
+}
 
-      
-
+.qrcode {
+    background-color: var(--primary-color);
+}
